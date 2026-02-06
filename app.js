@@ -231,15 +231,15 @@ function displaySentiment(result) {
     `;
     // Send log to Google Sheets
     logToGoogleSheets({
-    review: reviewText.textContent,
-    sentiment: label,
-    score,
-    meta: {
-        model: "Xenova/distilbert-base-uncased-finetuned-sst-2-english",
-        source: "github-pages",
-        userAgent: navigator.userAgent,
-    },
-});
+      review: reviewText.textContent,
+      sentiment: label,
+      score,
+      meta: {
+          model: "Xenova/distilbert-base-uncased-finetuned-sst-2-english",
+          source: "github-pages",
+          userAgent: navigator.userAgent,
+        },
+    });
  
 }
 
