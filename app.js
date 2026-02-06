@@ -17,7 +17,7 @@ const apiTokenInput = document.getElementById("api-token");
 const statusElement = document.getElementById("status"); // optional status label for model loading
 
 const LOG_ENDPOINT =
-  "https://script.google.com/macros/s/AKfycbxErvy8NtLg_uKvkeVyZHocMcxUsyA6lHiErMREMouhI6HX07tRhQ-e-T8Xg3Cw9dI7/exec";
+  "https://script.google.com/macros/s/AKfycbx29V7RNTloizb5T0DMW9Yh4dDIe11Sv-bhdVoivg6TQgvs9AHMxb3uceVyY24x2o4h/exec";
 
 
 async function logToGoogleSheets({ review, sentiment, score, meta = {} }) {
