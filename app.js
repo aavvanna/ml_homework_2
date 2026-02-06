@@ -32,6 +32,7 @@ async function logToGoogleSheets({ review, sentiment, score, meta = {} }) {
   try {
     await fetch(LOG_ENDPOINT, {
       method: "POST",
+      mode: "no-cors",   // ← ВОТ ЭТО ГЛАВНОЕ
       headers: {
         "Content-Type": "application/json",
       },
